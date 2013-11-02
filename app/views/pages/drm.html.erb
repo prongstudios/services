@@ -1,2 +1,12 @@
-<h1>Pages#drm</h1>
-<p>Find me in app/views/pages/drm.html.erb</p>
+<%
+	 r = rand(100)
+	 case r
+	 when 0..20
+	   @drmstatus = "DRM Failed! Please contact support@tutorialthegame.com immediately!"
+	 when 20..100
+	   @drmstatus = "DRM Succeeded! Enjoy your registered copy of Tutorial: The Game"
+	 end
+%>
+{
+				  "DRM Response": "<%= @drmstatus %>"
+}
