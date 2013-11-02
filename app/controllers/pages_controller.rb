@@ -11,10 +11,10 @@ class Drmstat
 		case r
 		when 0..50
 			@status = "DRM Failed! Your IP address has been logged.  Please contact support@tutorialthegame.com immediately!"
-			@success = false0
+			@success = false
 		when 50..100
 			@status = "DRM Succeeded! Enjoy your registered copy of Tutorial: The Game"
-			@success = "false"
+			@success = true
 		end
 	end
 end
